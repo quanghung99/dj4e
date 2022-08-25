@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = [ '*' ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://68b0-118-68-127-174.ap.ngrok.io'
+    'https://020c-118-68-127-174.ap.ngrok.io'
 ]
 
 # Application definition
@@ -43,7 +43,8 @@ INSTALLED_APPS = [
 
 # injection apps to project
     'home.apps.HomeConfig',
-    'autos.apps.AutosConfig'
+    'autos.apps.AutosConfig',
+    'cats.apps.CatsConfig'
 
 ]
 
