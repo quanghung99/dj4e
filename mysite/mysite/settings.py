@@ -21,7 +21,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure--@lyn0kvklyu#=-f0$v&^esi)5-tr021x9&y8x9yoc!ytk**og'
-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -30,6 +29,9 @@ ALLOWED_HOSTS = [ '*' ]
 CSRF_TRUSTED_ORIGINS = [
     'https://020c-118-68-127-174.ap.ngrok.io'
 ]
+
+# Show applications name and page title 
+APP_NAME = 'HoaPQ1'
 
 # Application definition
 
@@ -43,8 +45,9 @@ INSTALLED_APPS = [
 
 # injection apps to project
     'home.apps.HomeConfig',
-    'autos.apps.AutosConfig',
-    'cats.apps.CatsConfig'
+    'ads.apps.AdsConfig',
+    # 'autos.apps.AutosConfig',
+    # 'cats.apps.CatsConfig'
 
 ]
 
@@ -87,6 +90,17 @@ DATABASES = {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.mysql',
+    #     'NAME': 'hoapq1',
+    #     'USER': 'hoapq1',
+    #     'PASSWORD': 'quanghung99',
+    #     'HOST': 'drchuck.mysql.pythonanywhere-services.com',
+    #      'OPTIONS': {
+    #         'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+    #     },
+    # }
+
 }
 
 
