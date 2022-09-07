@@ -42,12 +42,19 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
+    'django.contrib.humanize',
 # injection apps to project
     'home.apps.HomeConfig',
     'ads.apps.AdsConfig',
     # 'autos.apps.AutosConfig',
     # 'cats.apps.CatsConfig'
+
+    'django_extensions', 
+    'crispy_forms',  
+    'rest_framework', 
+    'social_django',  
+    'taggit',
+
 
 ]
 
