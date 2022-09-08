@@ -11,4 +11,8 @@ urlpatterns = [
         views.AdUpdateView.as_view(success_url=reverse_lazy('ads:all')), name='ad_update'),
     path('ad/<int:pk>/delete',
         views.AdDeleteView.as_view(success_url=reverse_lazy('ads:all')), name='ad_delete'),
+    path('ad/<int:pk>/favorite',
+        views.AddFavoriteView.as_view(), name='ad_favorite'),
+    path('ad/<int:pk>/unfavorite',
+        views.DeleteFavoriteView.as_view(), name='ad_unfavorite'),
 ]
